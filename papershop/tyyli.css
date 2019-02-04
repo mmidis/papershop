@@ -1,0 +1,153 @@
+/* kaikille yhteiset */
+
+body {
+    background-color: white;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 0px 10px 0px 10px;
+}
+
+.logo {
+    width: 200px;
+    margin: 30px
+}
+
+a:link,
+a:visited {
+    list-style-type: none;
+    background-color: rgb(247, 204, 192);
+    color: white;
+    width: 7em;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    background-color: rgb(247, 174, 154);
+}
+
+nav ul {
+    padding-left: 0;
+}
+
+h1 {
+    color: rgb(247, 204, 192);
+    font-family: 'Dancing Script', cursive;
+    font-weight: lighter;
+    font-size: 3em
+}
+
+h2 {
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    font-weight: lighter;
+}
+
+#kartta {
+    width: 100%;
+    height: 400px;
+    border: 0;
+}
+
+img {
+    width: 90%;
+    max-width: 400px
+}
+
+/* näyttö < 785px */
+
+@media only screen and (max-width:785px) {
+    nav li {
+        list-style-type: none;
+        margin: 10px
+    }
+    #etusivupieni {
+        width: 100%;
+        margin-bottom: 20px
+    }
+    #etusivuiso {
+        display: none
+    }
+    .palstat3 {
+        display: none
+    }
+    .palstat2 {
+        display: flex
+    }
+    .palstat1 {
+        display: none
+    }
+     .palsta {
+        flex: 1;
+        padding-right: 5px
+    }
+}
+
+/* näyttö < 450px */
+@media only screen and (max-width: 450px) {
+    
+    #etusivupieni {
+        width: 100%;
+        margin-bottom: 20px
+    }
+    #etusivuiso {
+        display: none
+    }
+    .palstat3 {
+        display: none
+    }
+    .palstat2 {
+        display: none
+    }
+    .palstat1 {
+        display: flex
+    }
+}
+
+/* näyttö > 785px */
+
+@media only screen and (min-width: 800px) {
+    nav li {
+        list-style-type: none;
+        display: inline-block;
+        text-align: center;
+        width: 9em;
+    }
+    #etusivuiso {
+        width: 100%;
+        margin-bottom: 20px
+    }
+    #etusivupieni {
+        display: none
+    }
+    .palstat3 {
+        display: flex
+    }
+    .palstat1 {
+        display: none
+    }
+        
+    .palsta {
+        flex: 1;
+        padding-right: 5px
+    }
+        
+    .palstat2 {
+        display: none
+    }
+    
+    .tekstipalsta {
+        display: flex
+    }
+}
+
+footer {
+    background-color: rgb(247, 204, 192);
+    font-size: 0.8em;
+    padding: 1px 20px 1px 20px;
+    margin-top: 50px
+}
